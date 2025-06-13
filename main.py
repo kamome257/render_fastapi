@@ -13,6 +13,6 @@ async def root():
 def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
-    @app.get("/omikuji")
+@app.get("/omikuji")
 def read_omikuji():
     return {"Hello,omikiji!"}
